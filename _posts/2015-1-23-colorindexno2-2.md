@@ -6,4 +6,4 @@ size: 572 x 831 mm
 tag:
 ---
 
-image here
+![{{ post.title }}]({{ site.url }}/assets/img/2015-1-23-colorindexno2-2.png)

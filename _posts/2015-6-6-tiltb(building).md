@@ -6,4 +6,5 @@ size: 8 x 10 inch
 tag:
 ---
 
-image here
+
+![{{ post.title }}]({{ site.url }}/assets/img/2015-6-6-tiltb(building).jpg)

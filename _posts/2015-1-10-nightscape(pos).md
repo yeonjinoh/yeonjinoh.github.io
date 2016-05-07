@@ -5,4 +5,5 @@ material: acrylic on wooden panel
 size: 550 x 500 mm
 tag:
 ---
-image here
+
+![{{ post.title }}]({{ site.url }}/assets/img/2015-1-10-nightscape(pos).jpg)

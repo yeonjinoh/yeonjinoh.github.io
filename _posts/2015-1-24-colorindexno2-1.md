@@ -5,4 +5,5 @@ material: pigment print
 size: 572 x 831 mm
 tag:
 ---
-image here
+
+![{{ post.title }}]({{ site.url }}/assets/img/2015-1-24-colorindexno2-1.jpg)

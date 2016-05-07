@@ -2,8 +2,13 @@ body {
   color: black;
 }
 
-a:link {
+a {
   color: black;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: black;
+  }
 }
 
 .wrapper-masthead {
@@ -13,7 +18,6 @@ a:link {
   z-index: 9999;
   width: 100%;
   height: 50px;
-  background-color: none;
 }
 
 .wrapper-masthead site-info{

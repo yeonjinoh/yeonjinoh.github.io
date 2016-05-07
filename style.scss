@@ -24,13 +24,15 @@ a {
   float: left;
 }
 
-.wrapper-masthead nav
-
-{
+.wrapper-masthead nav{
   float:right;
 }
 
-.article {
+article {
   padding-top: 50px;
   width: 100%;
+}
+
+article img{
+  width: 90%;
 }

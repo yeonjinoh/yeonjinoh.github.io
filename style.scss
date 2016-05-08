@@ -13,9 +13,16 @@ body {
   color: $black;
 }
 
+h1 {
+ font-size: 15px;
+ font-weight: bold;
+ line-height: 140%;
+ 
+}
+
 a {
   color: $black;
-  text-decoration: none;
+  text-decoration: underline;
 	cursor: pointer;
   &:hover, &:active {
     color: $black;
@@ -63,11 +70,11 @@ nav {
   height: auto;
   padding-left:20%;
   padding-right: 20%;
-  padding-top: 20px;
+  padding-top: 10px;
 
     @include mobile {
-      margin-left: 5%;
-      margin-right: 5%;
+      margin-left: 0%;
+      margin-right: 0%;
     }
 }
 

@@ -17,6 +17,7 @@ h1 {
  font-size: 15px;
  font-weight: bold;
  line-height: 140%;
+ margin-bottom: 10px;
  
 }
 
@@ -58,14 +59,13 @@ nav {
  text-align: right;
 }
 
-#main {
+.container {
   position: relative;
   max-width: 800px;
   width: 100%;
-  padding-top: 50px;
 }
 
-#main img {
+.container img {
   width: 100%;
   height: auto;
   padding-left:20%;

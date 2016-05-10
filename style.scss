@@ -36,7 +36,6 @@ a {
  top: 0;
  left: 0;
  width: 100%;
- margin: 2px;
 }
 
 .wrapper-masthead {
@@ -55,13 +54,16 @@ header {
   margin-top: 22px;
 }
 
+.site-info,  nav {
+	wiidth: 50%;
+	margin: 2px;
+}
+
 .site-info {
- width: 50%;
  float: left;
 }
 
 nav {
- width: 50%;
  float: right;
  text-align: right;
 }

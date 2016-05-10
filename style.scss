@@ -54,16 +54,14 @@ header {
   margin-top: 22px;
 }
 
-.site-info,  nav {
-	padding: 2px;
-}
-
 .site-info {
  float: left;
+ padding-left: 5px;
 }
 
 nav {
  float: right;
+ padding-right: 5px;
  text-align: right;
 }
 

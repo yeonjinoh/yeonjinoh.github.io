@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post">
-  <div id="title"><h1>{{ page.title }}, {{ page.size }}</a></h1></div>
+  <div id="title"><h1>{{ page.title }},  {{ page.date | date: '%Y' }}, {{ page.material }}, {{ page.size }}</a></h1></div>
 
   <div class="entry">
     {{ content }}

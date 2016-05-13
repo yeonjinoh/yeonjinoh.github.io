@@ -4,6 +4,7 @@ title: Color Index #1-1
 material: pigment print
 size: 490 x 2926 mm
 tag:
+sort: 013
 ---
 
-![{{ post.title }}]({{ site.url }}/assets/img/2014-12-25-colorindexno1-1.png)
+![{{ post.title }}]({{ site.url }}/assets/img/color-index1-1.jpg)

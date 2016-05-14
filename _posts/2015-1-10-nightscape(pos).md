@@ -7,4 +7,7 @@ tag:
 sort: 015
 ---
 
-![{{ post.title }}]({{ site.url }}/assets/img/2015-1-10-nightscape(pos).jpg)
+![{{ post.title }}]({{ site.url }}/assets/img/1503-Nightscape(pos).jpg)
+![{{ post.title }}]({{ site.url }}/assets/img/1503-Nightscape(neg).jpg)
+![{{ post.title }}]({{ site.url }}/assets/img/1503-Nightscape(pos)-detail.jpg)
+![{{ post.title }}]({{ site.url }}/assets/img/1503-Nightscape(neg)-detail.jpg)

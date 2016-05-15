@@ -11,10 +11,43 @@
 // Syntax highlighting @import is at the bottom of this file
 
 body {
-  color: $black;
-  font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(0.7vw + 15px);
+    line-height: 157%;
+    margin: 1vmax;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: line-through;
+}
+
+.wrapper-masthead {
+    height: calc(6vmax + 16px);
+    min-height: 60px;
+}
+
+.site-info, nav {
+    width: 25vw;
+}
+
+.site-info {
+    float: left;
+}
+
+nav {
+    float: right;
+    text-align: right;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

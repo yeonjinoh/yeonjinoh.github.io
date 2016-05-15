@@ -16,7 +16,7 @@ layout: default
   <!-- add test for sort by custom number -->
 
 <article class="post">
-  {% for post in site.sort[1] %}
+  {% for post in site.sort.001 %}
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
   {% endfor %}
 </article>

@@ -31,9 +31,17 @@ a:visited {
     text-decoration: line-through;
 }
 
-.wrapper-masthead {
+.wrapper-masthead, .wrapper-masthead .container {
     height: calc(6vmax + 16px);
     min-height: 60px;
+}
+
+.wrapper-masthead .container, .post #title {
+    position: fixed;
+}
+
+.container {
+    width: 90vw;
 }
 
 .site-info, nav {

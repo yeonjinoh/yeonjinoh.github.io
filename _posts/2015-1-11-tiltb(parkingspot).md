@@ -3,7 +3,7 @@ layout: post
 title: Tilt B(Parkingspot)
 material: gelatin silver print
 size: 10 x 8 inch(each); 16 pieces
-tags: tilt, parkingspot
+tags: [tilt, parkingspot]
 ---
 
 ![{{ post.title }} 1st piece]({{ site.url }}/assets/img/1501-tilt_AB(parkingspot)01.jpg)

@@ -2,10 +2,10 @@
 layout: page
 title: tags
 ---
-{% if site.tags[page.tag] %}
-    {% for post in site.tags[page.tag] %}
-        <a href="{{ post.url }}/">{{ post.title }}</a>
-    {% endfor %}
-{% else %}
-    <p>There are no posts for this tag.</p>
-{% endif %}
+<ul class="tags">
+{% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
+{% endfor %}
+</ul>

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Color Index #1-3
+title: "Color Index #1-3"
 material: pigment print
 size: 490 x 2926 mm
-tag:
+tags: Color-Index-#1
 sort: 013
 ---
 

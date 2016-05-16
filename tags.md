@@ -2,8 +2,14 @@
 layout: page
 title: tags
 ---
+<ul>
 {% for post in site.posts %}
-    {% if post.categories contains 'tilt' %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}
+{% for tag in post.tags %}
+{% if tag == page.tag %}
+
+<li itemprop="name" itemprop=name>{{ post.title }}</li>
+
+{% endif %}
 {% endfor %}
+{% endfor %}
+</ul>

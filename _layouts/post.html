@@ -8,7 +8,7 @@ layout: default
   <div class="entry">
     {{ content }}
     <div class="entry-footer">
-      <h1>Tags: {{ page.tags  }}</h1>
+      <h1>Tags: {{ page.tags | sort | join: ", " }}</h1>
     </div>
   </div>
 

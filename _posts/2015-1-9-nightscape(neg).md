@@ -3,8 +3,7 @@ layout: post
 title: Nightscape(Negative)
 material: acrylic on wooden panel
 size: 550 x 500 mm
-tag:
-sort: 015
+tags: nightscape
 ---
 
 ![{{ post.title }}]({{ site.url }}/assets/img/1503-Nightscape(pos).jpg)

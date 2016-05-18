@@ -4,8 +4,8 @@ title: tags
 ---
 
 {% for tags in site.tags %}
-  {% for post in tags | mdf %)
-   {{% post.title  %}}
+  {% for post in tags contains 'mdf' %)
+   {{% post.title %}}
   {% endfor %}
 {% endfor %}
 

@@ -3,7 +3,7 @@ layout: page
 title: tags
 ---
 
-<ul class="tags">
+<ul>
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
     <li>

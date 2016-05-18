@@ -15,7 +15,7 @@ title: tags
     {% endif %}
   <!--{% endfor %}-->
 {% endfor %}
-
+</ul>
 
 
 <!--{% for tag in site.tags %}-->

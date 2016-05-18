@@ -73,8 +73,8 @@ article.post .entry p {
     margin-bottom: 1.5vh;
 }
 
-.posts .site_01 article :hover {
-    text-decoration: underline
+.posts .site_01 article:hover {
+    text-decoration: underline;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

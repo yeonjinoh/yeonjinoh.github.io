@@ -18,6 +18,8 @@ body {
     margin: 1vmax;
 }
 
+// styles for site_01
+
 a {
     color: black;
     text-decoration: none;
@@ -65,6 +67,10 @@ article p img {
 
 article.post .entry p {
     text-align: center;
+}
+
+.posts .site_01 article {
+    margin-bottom: 1.5vh;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

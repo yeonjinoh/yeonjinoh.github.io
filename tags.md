@@ -8,6 +8,7 @@ title: tags
   {% endif %}
 {% endfor %}
 
+------
 
 {% for tag in site.tags %}
   {% assign t = tag | first %}

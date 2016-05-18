@@ -6,14 +6,14 @@ title: tags
 
 {% for tag in site.tags %}
 <ul>
-  <!--{% for post in tag_last %}-->
+  {% for post in tag | last %}
     {% if post.tags contains 'tilt' %}
   <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
   </li>
     {% endif %}
-  <!--{% endfor %}-->
+  {% endfor %}
 {% endfor %}
 </ul>
 

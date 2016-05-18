@@ -119,7 +119,6 @@ title: tags
       {% endif  %}
     {% endfor %}
 </article>
-</div>
 
 <!--untitled section-->
 <article>
@@ -129,7 +128,6 @@ title: tags
       {% endif  %}
     {% endfor %}
 </article>
-</div>
 
 <!--nightscape section-->
 <article>
@@ -157,3 +155,4 @@ title: tags
       {% endif  %}
     {% endfor %}
 </article>
+</div>

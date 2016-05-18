@@ -2,10 +2,20 @@
 layout: page
 title: tags
 ---
+{% for tag in site.tags %}
+  {% assign t = tag | "tilt" %}
+  {% assign posts = tag | last %}
+
+{{ t | downcase }}
+<ul>
 {% for post in posts %}
-  {% if post.tags contains "mdf" %}
+  {% if post.tags contains t %}
+  <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
   {% endif %}
+{% endfor %}
+</ul>
 {% endfor %}
 
 ------

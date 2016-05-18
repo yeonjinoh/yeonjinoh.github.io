@@ -2,6 +2,7 @@
 layout: page
 title: tags
 ---
+<div class = "posts"
 <article>
 {% for post in site.posts %}
   {% if post.tags contains 'untitled' %}
@@ -9,4 +10,4 @@ title: tags
   {% endif  %}
 </article>
 {% endfor %}
-
+</div>

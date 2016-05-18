@@ -3,8 +3,9 @@ layout: page
 title: tags
 ---
 
+{% assign tags = page.tags | split:&nbsp; %}
 <ul>
-  {% for tags in page.tags %}
-    <li>{{ tags }}</li>
-  {% endfor %}
+    {% for tag in tags %}
+    <li>{{ tag }}</li>
+    {% endfor %}
 </ul>

@@ -3,7 +3,8 @@ layout: page
 title: tags
 ---
 
-
-{% for tag in site.tags %}
-{{ site.tags }}
-{% endfor %}
+<ul>
+  {% for tags in page.tags %}
+    <li>{{ tags }}</li>
+  {% endfor %}
+</ul>

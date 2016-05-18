@@ -3,27 +3,19 @@ layout: page
 title: tags
 ---
 
-{% for tags in site.tags %}
-  {% for post in tags contains 'mdf' %)
-   {{% post.title %}}
-  {% endfor %}
+{% for tag in site.tags %}
+  {% assign tag_first = tag | first %}
+  {% assign tag_last = tag | last %}
+
+{{ tag_first | downcase }}
+<ul>
+{% for post in tag_last %}
+  {% if post.tags contains tag_first %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+  </li>
+  {% endif %}
 {% endfor %}
-
-------
-
-<!--{% for tag in site.tags %}-->
-<!--  {% assign t = tag | first %}-->
-<!--  {% assign posts = tag | last %}-->
-
-<!--{{ t | downcase }}-->
-<!--<ul>-->
-<!--{% for post in posts %}-->
-<!--  {% if post.tags contains t %}-->
-<!--  <li>-->
-<!--    <a href="{{ post.url }}">{{ post.title }}</a>-->
-<!--    <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>-->
-<!--  </li>-->
-<!--  {% endif %}-->
-<!--{% endfor %}-->
-<!--</ul>-->
-<!--{% endfor %}-->
+</ul>
+{% endfor %}

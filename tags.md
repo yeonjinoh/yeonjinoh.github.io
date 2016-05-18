@@ -4,7 +4,7 @@ title: tags
 ---
 
 {% for tags in site.tags %}
-  <span h1>{{ site.tags | uniq | sort %}}</h1>
+  <span h1>{{ post.tags | uniq | sort %}}</h1>
 {% endfor %}
 
 ------

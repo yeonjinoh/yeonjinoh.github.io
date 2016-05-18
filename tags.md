@@ -5,5 +5,5 @@ title: tags
 
 
 {% for tag in site.tags %}
-{{ site.tag }}
+{{ site.tags }}
 {% endfor %}

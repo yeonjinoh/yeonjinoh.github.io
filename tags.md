@@ -2,14 +2,8 @@
 layout: page
 title: tags
 ---
-<ul>
-{% for post in site.posts %}
-{% for tag in post.tags %}
-{% if tag == page.tag %}
-
-<li itemprop="name" itemprop=name>{{ post.title }}</li>
-
-{% endif %}
+{% for post in posts %}
+  {% if post.tags contains "mdf" %}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  {% endif %}
 {% endfor %}
-{% endfor %}
-</ul>

@@ -132,7 +132,7 @@ title: tags
 <!--nightscape section-->
 <article>
     {% for post in site.posts %}
-      {% if post.tags contains 'nightscape' and 'square'  %}
+      {% if post.tags contains 'nightscape' and post.tags contains 'square'  %}
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
       {% endif  %}
     {% endfor %}
@@ -141,7 +141,7 @@ title: tags
 <!--nightscape section-->
 <article>
     {% for post in site.posts %}
-      {% if post.tags contains 'nightscape' and 'landscape' %}
+      {% if post.tags contains 'nightscape' and post.tags contains 'landscape' %}
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
       {% endif  %}
     {% endfor %}

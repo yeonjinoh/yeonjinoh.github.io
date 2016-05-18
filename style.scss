@@ -73,6 +73,10 @@ article.post .entry p {
     margin-bottom: 1.5vh;
 }
 
+.posts .site_01 article :hover {
+    text-decoration: underline
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

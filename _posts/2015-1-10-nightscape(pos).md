@@ -3,7 +3,7 @@ layout: post
 title: Nightscape(Positive)
 material: acrylic on wooden panel
 size: 550 x 500 mm
-tags: nightscape
+tags: [nightscape, square]
 permalink: /:date
 ---
 

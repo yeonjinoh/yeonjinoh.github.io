@@ -7,12 +7,12 @@
 
 @import "reset";
 @import "variables";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
 // Syntax highlighting @import is at the bottom of this file
 
 body {
     color: #000;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
     font-size: calc(0.7vw + 15px);
     line-height: calc(1.2vmin + 15px);
     margin: 1vmax;
@@ -35,7 +35,7 @@ a:visited {
 
 .wrapper-masthead, .wrapper-masthead .container {
     height: calc(4vmax + 16px);
-    min-height: 60px;
+    min-height: 30px;
 }
 
 .wrapper-masthead .container, .post #title {
@@ -44,6 +44,10 @@ a:visited {
 
 .container {
     width: calc(100vw - 2.5rem);
+}
+
+.container#main {
+  margin-top: 30px;
 }
 
 .site-info, nav {
@@ -75,6 +79,22 @@ article.post .entry p {
 
 .posts .site_01 article:hover {
     text-decoration: underline;
+}
+
+.posts .site_01 h1 {
+  margin-bottom: 1.5vh;
+}
+
+.posts .site_02 {
+  background-color: rgb(255, 251, 199);
+}
+
+.center-horizontal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: -1;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

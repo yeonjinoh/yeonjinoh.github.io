@@ -1,6 +1,7 @@
 ---
 layout: page
 title: tags
+permalink: /tags/
 ---
 <ul>
 {% for tag in site.tags %}

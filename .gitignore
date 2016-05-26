@@ -1,12 +1,16 @@
 _site
+
 .DS_Store
 .jekyll
 .jekyll-metadata
 .bundle
 .sass-cache
 .swp
+
 Gemfile
 Gemfile.lock
+
 node_modules
 package.json
 _config-dev.yml
+*.swp

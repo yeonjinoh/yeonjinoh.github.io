@@ -86,7 +86,6 @@ article.post .entry p {
 }
 
 .posts .site_02 {
-  background-color: rgb(255, 251, 199);
 }
 
 .center-horizontal {
@@ -97,6 +96,17 @@ article.post .entry p {
   z-index: -1;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.yellow {
+  background-color: rgb(255, 251, 199);
+}
+
+.item {
+  width: 500px;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

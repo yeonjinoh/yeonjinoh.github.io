@@ -15,43 +15,17 @@ layout: default
 
 
 <!--post sorts logic for "site 01"-->
-    {% assign tags = "parkingspot|stairs|cross|cube|building|playground|puppy|grid|trapezoid|edges|woman|Color-Index-#2|Color-Index-#1|untitled" | split: "|" %}
+    {% assign tags = "parkingspot|stairs|cross|cube|building|playground|puppy|grid|trapezoid|edges|woman|Color-Index-#2|Color-Index-#1|untitled|nightscape-squre|nightscape-landscape|still-mute" | split: "|" %}
     {% for tag in tags %}
       <article>
         {% for post in site.posts %} 
-          {% if post.tags contains tag %} 
+        {% if post.tags contains tag %} 
             <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
-          {% endif  %}
+        {% endif %}
         {% endfor %}
       </article>
     {% endfor %}
-
-  <!--nightscape section-->
-  <article>
-      {% for post in site.posts %}
-        {% if post.tags contains 'nightscape' and post.tags contains 'square'  %}
-          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
-        {% endif  %}
-      {% endfor %}
-  </article>
-
-  <!--nightscape section-->
-  <article>
-      {% for post in site.posts %}
-        {% if post.tags contains 'nightscape' and post.tags contains 'landscape' %}
-          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
-        {% endif  %}
-      {% endfor %}
-  </article>
-
-  <!--still mute section-->
-  <article>
-      {% for post in site.posts %}
-        {% if post.tags contains 'still-mute' %}
-          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
-        {% endif  %}
-      {% endfor %}
-  </article>
+ 
   </div>
 <!--end of post sorts logic for "site 01"-->
 
@@ -65,3 +39,7 @@ layout: default
 
 <!-- end test -->
 </div>
+
+<script>
+  $("#link_01").addClass("underline");
+</script>

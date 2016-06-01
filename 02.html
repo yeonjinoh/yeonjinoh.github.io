@@ -2,66 +2,37 @@
 layout: default
 ---
 
-<div class="posts">
-  <div class="site_02">
-<!-- default setting -->
-  <!--{% for post in site.posts %}-->
-  <!--  <article class="post">-->
+<script src="{{ site.baseurl }}/freewall-1.0.6/freewall.js" ></script>
 
-  <!--    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>-->
-
-  <!--  </article>-->
-  <!--{% endfor %}-->
-
-
-<!--post sorts logic for "site 01"-->
-    {% assign tags = "parkingspot|stairs|cross|cube|building|playground|puppy|grid|trapezoid|edges|woman|Color-Index-#2|Color-index-#1|untitled" | split: "|" %}
-    {% for tag in tags %}
-      <article>
-        {% for post in site.posts %} 
-          {% if post.tags contains tag %} 
-            <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
-          {% endif  %}
-        {% endfor %}
-      </article>
-    {% endfor %}
-
-  <!--nightscape section-->
-  <article>
-      {% for post in site.posts %}
-        {% if post.tags contains 'nightscape' and post.tags contains 'square'  %}
-          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
-        {% endif  %}
-      {% endfor %}
-  </article>
-
-  <!--nightscape section-->
-  <article>
-      {% for post in site.posts %}
-        {% if post.tags contains 'nightscape' and post.tags contains 'landscape' %}
-          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
-        {% endif  %}
-      {% endfor %}
-  </article>
-
-  <!--still mute section-->
-  <article>
-      {% for post in site.posts %}
-        {% if post.tags contains 'still-mute' %}
-          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
-        {% endif  %}
-      {% endfor %}
-  </article>
+<div id="container" style="width: 90%; margin: auto;">
+  {% assign sorted = (site.posts | sort: "order") %}
+  {% for post in sorted %}
+  {% if post.categories contains "thumbnail" %}
+  <div class="item">
+    <img src="{{ site.baseurl }}{{ post.thumbnail }}" />
+    <p>{{ post.title }}</p>
   </div>
-<!--end of post sorts logic for "site 01"-->
-
-  <!-- add test for sort by custom number -->
-
-<!-- <article class="post">
-  {% for post in site.categories.parkingspot %}
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
+  {% endif %}
   {% endfor %}
-</article> -->
 
-<!-- end test -->
+  {{ postList }}
 </div>
+
+<script>
+  $("body").addClass("yellow");
+  $("#link_02").addClass("underline");
+  $(function() {
+    var wall = new Freewall("#container");
+    wall.reset({
+      selector: '.item',
+      cellW: 500,
+      cellH: 'auto',
+      gutterX: 80,
+      gutterY: 80,
+      onResize: function() {
+        wall.fitWidth();
+      }
+    });
+    wall.fitWidth();
+  });
+</script>

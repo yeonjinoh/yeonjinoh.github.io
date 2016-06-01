@@ -15,11 +15,11 @@ layout: default
 
 
 <!--post sorts logic for "site 01"-->
-    {% assign tags = "parkingspot|stairs|cross|cube|building|playground|puppy|grid|trapezoid|edges|woman|Color-Index-#2|Color-Index-#1|untitled|nightscape-squre|nightscape-landscape|still-mute" | split: "|" %}
+    {% assign tags = "parkingspot|stairs|cross|cube|building|playground|puppy|grid|trapezoid|edges|woman|color-index-#2|color-index-#1|untitled|nightscape-square|nightscape-landscape|still-mute" | split: "|" %}
     {% for tag in tags %}
       <article>
         {% for post in site.posts %} 
-        {% if post.tags contains tag %} 
+        {% if post.categories contains tag %} 
             <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</a></h1>
         {% endif %}
         {% endfor %}

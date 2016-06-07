@@ -3,14 +3,28 @@ layout: default
 ---
 
 <article class="post">
-  <div id="title"><h1>{{ page.title }},  {{ page.date | date: '%Y' }}, {{ page.material }}, {{ page.size }}</a></h1></div>
+  <div id="title">
+    <a>
+      {% assign cat-first = page.categories | first %}
+      {% assign cat-last = page.categories | last %}
+
+      {% for post in site.posts %}
+        {% if post.categories contains cat-first %}
+          {% if post.categories contains cat-last %}
+            <h1>{{ post.title }}, {{ post.date | date: '%Y' }}, {{ post.material }}, {{ post.size }}</h1>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </a>
+  </div>
 
   <div class="entry">
     {{ content }}
+
     <div class="entry-footer">
       <h1>Tags: {{ page.tags | sort | join: ", " }}</h1>
     </div>
   </div>
 
-  {% include disqus.html %}
+  <!-- {% include disqus.html %} -->
 </article>
